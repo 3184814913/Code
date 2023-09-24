@@ -3,7 +3,4 @@ project(C__)
 
 set(CMAKE_CXX_STANDARD 17)
 
-
-add_executable(Demo Demo.cpp
-        Demo.cpp
-        Demo2.cpp)
+add_executable(Demo2 Demo2.cpp)

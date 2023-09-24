@@ -41,43 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Code/C++/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Demo
+# Object build statements for EXECUTABLE target Demo2
 
 
 #############################################
-# Order-only phony target for Demo
+# Order-only phony target for Demo2
 
-build cmake_object_order_depends_target_Demo: phony || CMakeFiles/Demo.dir
+build cmake_object_order_depends_target_Demo2: phony || CMakeFiles/Demo2.dir
 
-build CMakeFiles/Demo.dir/Demo.cpp.obj: CXX_COMPILER__Demo_unscanned_Debug D$:/Code/C++/Demo.cpp || cmake_object_order_depends_target_Demo
-  DEP_FILE = CMakeFiles\Demo.dir\Demo.cpp.obj.d
+build CMakeFiles/Demo2.dir/Demo2.cpp.obj: CXX_COMPILER__Demo2_unscanned_Debug D$:/Code/C++/Demo2.cpp || cmake_object_order_depends_target_Demo2
+  DEP_FILE = CMakeFiles\Demo2.dir\Demo2.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Demo.dir
-  OBJECT_FILE_DIR = CMakeFiles\Demo.dir
-
-build CMakeFiles/Demo.dir/Demo2.cpp.obj: CXX_COMPILER__Demo_unscanned_Debug D$:/Code/C++/Demo2.cpp || cmake_object_order_depends_target_Demo
-  DEP_FILE = CMakeFiles\Demo.dir\Demo2.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Demo.dir
-  OBJECT_FILE_DIR = CMakeFiles\Demo.dir
+  OBJECT_DIR = CMakeFiles\Demo2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Demo2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Demo
+# Link build statements for EXECUTABLE target Demo2
 
 
 #############################################
-# Link the executable Demo.exe
+# Link the executable Demo2.exe
 
-build Demo.exe: CXX_EXECUTABLE_LINKER__Demo_Debug CMakeFiles/Demo.dir/Demo.cpp.obj CMakeFiles/Demo.dir/Demo2.cpp.obj
+build Demo2.exe: CXX_EXECUTABLE_LINKER__Demo2_Debug CMakeFiles/Demo2.dir/Demo2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Demo.dir
+  OBJECT_DIR = CMakeFiles\Demo2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Demo.exe
-  TARGET_IMPLIB = libDemo.dll.a
-  TARGET_PDB = Demo.exe.dbg
+  TARGET_FILE = Demo2.exe
+  TARGET_IMPLIB = libDemo2.dll.a
+  TARGET_PDB = Demo2.exe.dbg
 
 
 #############################################
@@ -105,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Demo: phony Demo.exe
+build Demo2: phony Demo2.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +109,7 @@ build Demo: phony Demo.exe
 #############################################
 # Folder: D:/Code/C++/cmake-build-debug
 
-build all: phony Demo.exe
+build all: phony Demo2.exe
 
 # =============================================================================
 # Built-in targets
